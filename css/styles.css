@@ -8,6 +8,9 @@
   --cloud-color: #f4f4fd;
   --green-color: #31d0aa;
   --white-color: #ffffff;
+  --grey-color: #2e2f42;
+  --navy-blue-modal-color: #2e2f42;
+  --diary-color: #fcfcfc;
   --primary-font: "Roboto", sans-serif;
   --secondary-font: "Raleway", sans-serif;
 }
@@ -160,7 +163,11 @@ button {
   margin-left: auto;
   margin-right: auto;
   background-color: var(--navy-blue-color);
-  background-image: url(../images/background/people-office.jpg);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/background/people-office.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -300,6 +307,7 @@ button {
   text-align: center;
   letter-spacing: 0.02em;
 }
+
 /* =================/TEAM================ */
 
 /* =================FILTER================ */
@@ -367,7 +375,11 @@ button {
 }
 
 /* =================/FILTER================ */
-
+/* ==========================Customers======================= */
+.customers-list {
+  display: flex;
+}
+/* ==========================/Customers======================= */
 /* =================FOOTER================ */
 .footer {
   background-color: var(--navy-blue-color);
@@ -378,6 +390,10 @@ button {
 .footer-container {
   width: 264px;
   /* flex-wrap: wrap; */
+}
+
+.footer > .container {
+  display: flex;
 }
 
 .footer-about {
@@ -396,4 +412,11 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--cloud-color);
-} /* =================/FOOTER================ */
+}
+.social-list {
+  display: flex;
+}
+.social-item {
+}
+
+/* =================/FOOTER================ */
